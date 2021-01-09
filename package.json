@@ -24,7 +24,8 @@
   "scripts": {
     "prepublishOnly": "npm run tsc",
     "tsc": "tsc -p ./tsconfig.json && tsc -p ./tsconfig-cjs.json",
-    "lint": "eslint src/*.ts --quiet --fix"
+    "lint": "eslint src/*.ts",
+    "lint:fix": "eslint src/*.ts --fix"
   },
   "repository": {
     "type": "git",
@@ -44,8 +45,8 @@
     }
   },
   "lint-staged": {
-    "src/*.ts": [
-      "eslint --cache --fix"
+    "*.ts": [
+      "eslint"
     ]
   }
 }
