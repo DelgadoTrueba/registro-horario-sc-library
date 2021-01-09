@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
     "module": "ES2020",
+    "target": "ES2015",
     "declaration": true,
     "strict": true,
     "esModuleInterop": true,
