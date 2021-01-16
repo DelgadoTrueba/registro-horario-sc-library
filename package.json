@@ -29,6 +29,7 @@
     "tsc": "tsc -p ./tsconfig.json && tsc -p ./tsconfig-cjs.json",
     "lint": "eslint src/*.ts",
     "lint:fix": "eslint src/*.ts --fix",
+    "pretest": "npm run lint",
     "test": "jest",
     "coverage": "jest --coverage"
   },
